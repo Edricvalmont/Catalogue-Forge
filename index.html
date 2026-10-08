@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1c1f24">
+<title>Catalogue de la Forge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header hero">
+  <!-- Rayons de lumière du vitrail -->
+  <div class="hero-rays" aria-hidden="true"></div>
+
+  <div class="hero-text">
+    <p class="hero-kicker">Sous la protection de Zénithar</p>
+    <h1 id="shop-name"></h1>
+    <p class="subtitle" id="shop-sub"></p>
+    <blockquote class="hero-quote">
+      « Par le travail sérieux et le profit honnête, la paix et la prospérité se développent. »
+      <cite>Zénithar, dieu du travail, du commerce et de la richesse, celui qui va toujours gagner</cite>
+    </blockquote>
+  </div>
+
+  <div class="hero-art" aria-hidden="true">
+    <div class="hero-halo"></div>
+    <img class="hero-window" src="images/zenithar.webp" alt="">
+    <!-- Enclume et marteau -->
+    <svg class="hero-anvil" viewBox="0 0 220 130">
+      <defs>
+        <linearGradient id="fer" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4a4f57"/>
+          <stop offset=".18" stop-color="#2a2f37"/>
+          <stop offset="1" stop-color="#15171b"/>
+        </linearGradient>
+      </defs>
+      <!-- marteau -->
+      <g transform="rotate(-28 150 40)">
+        <rect x="146" y="-6" width="7" height="70" rx="2" fill="#5a3b22"/>
+        <rect x="132" y="-14" width="36" height="16" rx="2" fill="url(#fer)" stroke="#c9a24a" stroke-opacity=".5"/>
+      </g>
+      <!-- enclume -->
+      <path d="M8 44 Q40 40 66 34 L182 34 L182 58 Q160 62 150 70 L150 88 L172 110 L172 122 L62 122 L62 110 L84 88 L84 70 Q62 64 40 56 Q20 51 8 44 Z"
+            fill="url(#fer)" stroke="#c9a24a" stroke-opacity=".45" stroke-width="1.2"/>
+      <path d="M66 34 L182 34" stroke="#e2c27a" stroke-opacity=".7" stroke-width="1.5"/>
+      <!-- métal chauffé sur l'enclume -->
+      <rect x="104" y="29" width="46" height="6" rx="2" fill="#e0803a"/>
+      <rect x="104" y="29" width="46" height="6" rx="2" fill="#ffd27a" opacity=".55" class="hero-hot"/>
+    </svg>
+  </div>
+
+  <!-- Braises qui montent -->
+  <div class="hero-embers" aria-hidden="true">
+    <i style="--x:58%;--d:5.5s;--t:0s"></i><i style="--x:64%;--d:7s;--t:1.2s"></i>
+    <i style="--x:70%;--d:6s;--t:2.4s"></i><i style="--x:76%;--d:8s;--t:.6s"></i>
+    <i style="--x:81%;--d:6.5s;--t:3.1s"></i><i style="--x:86%;--d:7.5s;--t:1.8s"></i>
+    <i style="--x:91%;--d:5s;--t:2.9s"></i><i style="--x:67%;--d:9s;--t:4s"></i>
+    <i style="--x:73%;--d:6.8s;--t:4.6s"></i><i style="--x:88%;--d:8.4s;--t:3.7s"></i>
+    <i style="--x:79%;--d:5.8s;--t:5.2s"></i><i style="--x:61%;--d:7.8s;--t:5.8s"></i>
+  </div>
+</header>
+
+<div class="layout">
+  <!-- Barre latérale : recherche et filtres (suit le défilement) -->
+  <aside class="toolbar">
+    <div class="toolbar-inner">
+      <div class="search-row">
+        <input id="search" type="search" placeholder="Rechercher… (touche /)" autocomplete="off">
+        <select class="jump" id="jump" aria-label="Aller à une section"><option value="">Aller à…</option></select>
+      </div>
+      <p class="side-title">Catégories</p>
+      <div class="chips" id="chips"></div>
+      <p class="side-title">Affichage</p>
+      <div class="toggles">
+        <label><input type="checkbox" id="t-mat" checked> Matériaux</label>
+        <label><input type="checkbox" id="t-mo" checked> Main d'œuvre</label>
+        <label><input type="checkbox" id="t-img" checked> Images</label>
+        <label><input type="checkbox" id="t-devis" checked> Devis</label>
+      </div>
+    </div>
+  </aside>
+
+  <main id="list"></main>
+</div>
+
+<aside id="devis" class="closed">
+  <div class="devis-head" id="devis-head"><strong>Devis</strong><span id="devis-total">0 article</span></div>
+  <div class="body" id="devis-body"></div>
+  <div class="actions">
+    <button id="devis-clear">Vider</button>
+    <button id="devis-copy" class="primary">Copier</button>
+  </div>
+</aside>
+
+<div id="lightbox"><img alt=""></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

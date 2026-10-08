@@ -1,0 +1,203 @@
+Noms de fichiers attendus pour les images (.png, .jpg ou .webp).
+Dépose-les dans ce dossier avec exactement ce nom.
+[OK]   = image présente
+[----] = image manquante
+
+[Armes en fer]
+  [OK]   armes-en-fer-arc.webp
+  [OK]   armes-en-fer-fleches-x80.webp
+  [OK]   armes-en-fer-dague.webp
+  [OK]   armes-en-fer-epee.webp
+  [OK]   armes-en-fer-hache.webp
+  [OK]   armes-en-fer-masse.webp
+  [OK]   armes-en-fer-espadon.webp
+  [OK]   armes-en-fer-hache-d-arme.webp
+  [OK]   armes-en-fer-marteau-de-guerre.webp
+
+[Armes en acier]
+  [OK]   armes-en-acier-arc.webp
+  [OK]   armes-en-acier-fleches-x80.webp
+  [OK]   armes-en-acier-dague.webp
+  [OK]   armes-en-acier-epee.webp
+  [OK]   armes-en-acier-hache.webp
+  [OK]   armes-en-acier-masse.webp
+  [OK]   armes-en-acier-espadon.webp
+  [OK]   armes-en-acier-hache-d-arme.webp
+  [OK]   armes-en-acier-marteau-de-guerre.webp
+
+[Armes communes]
+  [----] armes-communes-arc.png
+  [----] armes-communes-dague.png
+  [----] armes-communes-epee.png
+  [----] armes-communes-hache.png
+  [----] armes-communes-espadon.png
+  [----] armes-communes-hache-d-arme.png
+  [----] armes-communes-masse.png
+
+[Armure en fer]
+  [OK]   armure-en-fer-casque.webp
+  [OK]   armure-en-fer-armure.webp
+  [OK]   armure-en-fer-gantelets.webp
+  [OK]   armure-en-fer-bottes.webp
+  [OK]   armure-en-fer-bouclier.webp
+
+[Armure en acier]
+  [OK]   armure-en-acier-casque.webp
+  [OK]   armure-en-acier-armure.webp
+  [OK]   armure-en-acier-gantelets.webp
+  [OK]   armure-en-acier-bottes.webp
+  [OK]   armure-en-acier-bouclier.webp
+
+[Dwemer]
+  [OK]   dwemer-armure.webp
+  [OK]   dwemer-gantelets.webp
+  [OK]   dwemer-bottes.webp
+  [OK]   dwemer-casque.webp
+  [OK]   dwemer-bouclier.webp
+
+[Dwemer Jerall]
+  [OK]   dwemer-jerall-armure.webp
+  [OK]   dwemer-jerall-gantelets.webp
+  [OK]   dwemer-jerall-bottes.webp
+  [OK]   dwemer-jerall-casque.webp
+  [OK]   dwemer-jerall-bouclier.webp
+
+[Dwemer Velothi]
+  [OK]   dwemer-velothi-armure.webp
+  [OK]   dwemer-velothi-gantelets.webp
+  [OK]   dwemer-velothi-bottes.webp
+  [OK]   dwemer-velothi-casque.webp
+
+[Orsimer]
+  [OK]   orsimer-armure.webp
+  [OK]   orsimer-gantelets.webp
+  [OK]   orsimer-bottes.webp
+  [OK]   orsimer-casque.webp
+  [OK]   orsimer-bouclier.webp
+
+[Bosmer lourd]
+  [OK]   bosmer-lourd-armure.webp
+  [OK]   bosmer-lourd-gantelets.webp
+  [OK]   bosmer-lourd-bottes.webp
+  [OK]   bosmer-lourd-casque.webp
+
+[Impérial]
+  [OK]   imperial-armure.webp
+  [OK]   imperial-gantelets.webp
+  [OK]   imperial-bottes.webp
+
+[Sombrages]
+  [OK]   sombrages-armure.webp
+  [OK]   sombrages-gantelets.webp
+  [OK]   sombrages-bottes.webp
+  [OK]   sombrages-casque.webp
+  [OK]   sombrages-bouclier.webp
+
+[Armure commune lourde]
+  [----] armure-commune-lourde-armure.png
+
+[Lamellar]
+  [OK]   lamellar-armure.webp
+  [OK]   lamellar-gantelets.webp
+  [OK]   lamellar-bottes.webp
+  [OK]   lamellar-casque.webp
+
+[Elfique]
+  [OK]   elfique-armure.webp
+  [OK]   elfique-gantelets.webp
+  [OK]   elfique-bottes.webp
+  [OK]   elfique-casque.webp
+  [OK]   elfique-bouclier.webp
+
+[Bosmer]
+  [OK]   bosmer-armure.webp
+  [OK]   bosmer-gantelets.webp
+  [OK]   bosmer-bottes.webp
+  [OK]   bosmer-casque.webp
+
+[Commun]
+  [OK]   commun-armure.webp
+  [OK]   commun-gantelets.webp
+  [OK]   commun-bottes.webp
+  [----] commun-casque.png
+  [----] commun-bouclier.png
+
+[Armure en cuir]
+  [OK]   armure-en-cuir-casque.webp
+  [OK]   armure-en-cuir-armure.webp
+  [OK]   armure-en-cuir-gantelets.webp
+  [OK]   armure-en-cuir-bottes.webp
+  [----] armure-en-cuir-bouclier.png
+
+[Armure en peaux]
+  [OK]   armure-en-peaux-casque.webp
+  [OK]   armure-en-peaux-armure.webp
+  [OK]   armure-en-peaux-gantelets.webp
+  [OK]   armure-en-peaux-bottes.webp
+  [OK]   armure-en-peaux-bouclier.webp
+  [----] armure-en-peaux-large-fourrure.png
+
+[Armure en fourrure]
+  [OK]   armure-en-fourrure-casque.webp
+  [OK]   armure-en-fourrure-armure.webp
+  [OK]   armure-en-fourrure-gantelets.webp
+  [OK]   armure-en-fourrure-bottes.webp
+  [----] armure-en-fourrure-bouclier.png
+  [----] armure-en-fourrure-col.png
+
+[Armure cloutée]
+  [OK]   armure-cloutee-armure.webp
+
+[Armure commune légère]
+  [----] armure-commune-legere-armure.png
+  [----] armure-commune-legere-gantelets.png
+  [----] armure-commune-legere-bottes.png
+
+[Armure de mailles]
+  [----] armure-de-mailles-mail-and-hide-armor.png
+  [----] armure-de-mailles-mail-and-jacket.png
+  [----] armure-de-mailles-mail-and-surcoat.png
+  [----] armure-de-mailles-mail-tunic.png
+
+[Armure huilée (Oiled)]
+  [----] armure-huilee-oiled-oiled-mail-and-hide-armor.png
+  [----] armure-huilee-oiled-oiled-mail-and-jacket.png
+  [----] armure-huilee-oiled-oiled-mail-hauberk.png
+
+[Orsimer léger]
+  [OK]   orsimer-leger-armure.webp
+  [OK]   orsimer-leger-armure-variante.webp
+  [OK]   orsimer-leger-gantelets.webp
+  [OK]   orsimer-leger-bottes.webp
+  [OK]   orsimer-leger-casque.webp
+
+[Rugged]
+  [OK]   rugged-armure.webp
+  [OK]   rugged-gantelets.webp
+  [OK]   rugged-bottes.webp
+  [OK]   rugged-casque.webp
+  [OK]   rugged-bouclier.webp
+
+[Peau]
+  [OK]   peau-armure.webp
+  [OK]   peau-armure-variante.webp
+  [OK]   peau-gantelets.webp
+  [OK]   peau-bottes.webp
+  [OK]   peau-casque.webp
+  [OK]   peau-bouclier.webp
+
+[Rogue]
+  [OK]   rogue-armure.webp
+  [OK]   rogue-gantelets.webp
+  [OK]   rogue-bottes.webp
+  [OK]   rogue-casque.webp
+
+[Outils]
+  [OK]   outils-pioche.webp
+  [OK]   outils-hache-de-bucheron.webp
+  [----] outils-cle.png
+  [----] outils-outil-de-reparation-d-armure.png
+  [----] outils-outil-de-reparation-d-arme.png
+
+[Réparations]
+  [----] reparations-reparation-n-importe-quel-objet.png

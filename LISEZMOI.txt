@@ -1,0 +1,29 @@
+CATALOGUE DE LA FORGE — MODE D'EMPLOI
+=====================================
+
+FICHIERS
+  index.html  -> la structure de la page (double-clic pour l'ouvrir)
+  style.css   -> l'apparence (couleurs, largeur, mobile)
+  script.js   -> le fonctionnement (recherche, filtres, devis)
+  data.js     -> TOUS les prix, matériaux et objets. Le seul fichier à modifier pour les prix.
+  images/     -> les images des objets
+
+CHANGER UN PRIX
+  Ouvre data.js avec un éditeur de texte (Bloc-notes, VS Code…),
+  change le chiffre après  prix:  puis enregistre et recharge la page (F5).
+  prix: null  = affiché "Sur devis".
+
+AJOUTER UNE IMAGE
+  Mets l'image dans images/ avec le nom indiqué dans images/_noms-des-images.txt
+  (ex. armes-en-fer-epee.png). Elle apparaît toute seule.
+  Tu peux aussi choisir ton propre nom en ajoutant  img: "mon-image.jpg"  à l'objet.
+
+UTILISATION EN RP
+  - Touche  /  pour aller directement dans la recherche (ex. "bottes acier").
+  - Boutons de catégorie et menu "Aller à…" pour sauter à une section.
+  - Cases à cocher pour masquer matériaux / main d'oeuvre / images (vue client).
+  - Bouton + : ajoute au devis. "Copier" copie un récapitulatif à coller dans le chat.
+
+METTRE EN LIGNE
+  Glisse tout le dossier sur https://app.netlify.com/drop
+  ou pousse-le sur un dépôt GitHub avec GitHub Pages activé.
