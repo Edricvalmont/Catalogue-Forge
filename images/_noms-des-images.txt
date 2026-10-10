@@ -201,3 +201,38 @@ Dépose-les dans ce dossier avec exactement ce nom.
 
 [Réparations]
   [----] reparations-reparation-n-importe-quel-objet.png
+
+==================== APERÇUS PORTÉS ====================
+Image d'un personnage portant le set complet, affichée à gauche du tableau.
+Nom : apercu-<groupe>.webp (ou .jpg / .png). Si absente, le bloc ne s'affiche pas.
+
+  [----] apercu-armes-en-fer.webp
+  [----] apercu-armes-en-acier.webp
+  [----] apercu-armes-communes.webp
+  [OK]   apercu-armure-en-fer.webp
+  [OK]   apercu-armure-en-acier.webp
+  [OK]   apercu-dwemer.webp
+  [OK]   apercu-dwemer-jerall.webp
+  [OK]   apercu-dwemer-velothi.webp
+  [OK]   apercu-orsimer.webp
+  [OK]   apercu-bosmer-lourd.webp
+  [OK]   apercu-imperial.webp
+  [OK]   apercu-sombrages.webp
+  [----] apercu-armure-commune-lourde.webp
+  [----] apercu-lamellar.webp
+  [OK]   apercu-elfique.webp
+  [OK]   apercu-bosmer.webp
+  [OK]   apercu-commun.webp
+  [OK]   apercu-armure-en-cuir.webp
+  [OK]   apercu-armure-en-peaux.webp
+  [OK]   apercu-armure-en-fourrure.webp
+  [----] apercu-armure-cloutee.webp
+  [----] apercu-armure-commune-legere.webp
+  [----] apercu-armure-de-mailles.webp
+  [----] apercu-armure-huilee-oiled.webp
+  [OK]   apercu-orsimer-leger.webp
+  [OK]   apercu-rugged.webp
+  [----] apercu-peau.webp
+  [OK]   apercu-rogue.webp
+  [----] apercu-outils.webp
+  [----] apercu-reparations.webp

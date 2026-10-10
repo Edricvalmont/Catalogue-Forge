@@ -111,8 +111,23 @@
     if (img.tagName !== "IMG" || !img.dataset.tries) return;
     const tries = JSON.parse(img.dataset.tries), i = +img.dataset.i + 1;
     if (i < tries.length) { img.dataset.i = i; img.src = tries[i]; }
+    else if (img.classList.contains("apercu-img")) {
+      // Pas d'aperçu porté pour ce set : on retire le bloc
+      const g = img.closest(".group"); img.closest(".apercu")?.remove(); g?.classList.remove("has-apercu");
+    }
     else { const ph = document.createElement("div"); ph.className = "ph"; ph.title = "Image attendue : " + tries[0]; img.replaceWith(ph); }
   }, true);
+
+  // Aperçu porté : images/apercu-<groupe>.webp (ou .jpg / .png), ou le champ  apercu: "fichier"  du groupe
+  function apercuBlock(g) {
+    if (g.apercu === false) return "";
+    const base = "images/apercu-" + slug(g.groupe);
+    const tries = g.apercu ? ["images/" + g.apercu] : ["webp", "jpg", "png"].map(x => base + "." + x);
+    return `<figure class="apercu">
+      <img class="apercu-img" alt="Aperçu porté : ${esc(g.groupe)}" data-tries='${JSON.stringify(tries)}' data-i="0" src="${esc(tries[0])}">
+      <figcaption><span>Aperçu porté</span><strong>${esc(g.groupe)}</strong></figcaption>
+    </figure>`;
+  }
 
   function render() {
     const words = norm($("#search").value).split(/\s+/).filter(Boolean);
@@ -123,10 +138,12 @@
       const items = g.items.filter(it => words.every(w => it._search.includes(w)));
       if (!items.length) return;
       const hasMat = items.some(it => it.mat);
-      html += `<section class="group" id="g-${slug(g.groupe)}">
+      const ap = apercuBlock(g);
+      html += `<section class="group${ap ? " has-apercu" : ""}" id="g-${slug(g.groupe)}">
         <h2><span>${esc(g.groupe)}${g.licence ? ` <button class="lic-badge" data-lic="${esc(g.licence)}" title="Voir les tarifs de licence">Licence</button>` : ""}</span> <small>${esc(g.categorie)}</small></h2>
         ${g.licence ? `<div class="note lic-note">Soumis à licence ${esc(licNom(g))}${LIC.origines[g.licence]?.autorite ? " (" + esc(LIC.origines[g.licence].autorite) + ")" : ""} · fabrication ${fmt(LIC.fabrication)} · port : ${LIC.origines[g.licence]?.equipement ? "à partir de " + fmt(Math.min(...LIC.origines[g.licence].equipement.map(r => r[1]))) + " par pièce" : "tarif non communiqué"}</div>` : ""}
         ${g.note ? `<div class="note">${esc(g.note)}</div>` : ""}
+        <div class="group-body">${ap}<div class="group-table">
         <table><thead><tr>
           <th class="thumb"></th><th>Objet</th>${hasMat ? '<th class="mat">Matériaux</th>' : ""}
           <th class="num mo">M.O.</th><th class="num">Prix</th><th class="devis-col"></th>
@@ -139,7 +156,7 @@
           <td class="num prix">${money(it.prix)}</td>
           <td class="devis-col"><button class="add" data-id="${it._id}" title="Ajouter au devis">+</button></td>
         </tr>`).join("")}
-        </tbody></table></section>`;
+        </tbody></table></div></div></section>`;
     });
     $("#list").innerHTML = (licOnly ? licencePanel() : "") + (html || '<p class="empty">Aucun objet trouvé.</p>');
   }
@@ -188,7 +205,7 @@
       if (l.qty <= 0) devis.splice(+q.dataset.q, 1);
       renderDevis(); return;
     }
-    if (e.target.matches(".thumb img")) {
+    if (e.target.matches(".thumb img, .apercu-img")) {
       $("#lightbox img").src = e.target.src; $("#lightbox").classList.add("open"); return;
     }
     if (e.target.closest("#lightbox")) $("#lightbox").classList.remove("open");

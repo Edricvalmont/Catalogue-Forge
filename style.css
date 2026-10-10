@@ -225,6 +225,30 @@ main { max-width: var(--page-width); margin: 0 auto; padding: 14px var(--gutter)
 }
 .group .note { padding: 6px 14px; color: var(--muted); font-size: .9rem; border-bottom: 1px solid var(--border); font-style: italic; }
 
+/* ---------- Aperçu porté ---------- */
+.group-body { display: block; }
+.group.has-apercu .group-body { display: grid; grid-template-columns: 250px minmax(0, 1fr); }
+.group-table { min-width: 0; }
+.apercu {
+  position: relative; margin: 0; overflow: hidden;
+  border-right: 1px solid var(--border); background: var(--charbon);
+}
+.apercu img {
+  display: block; width: 100%; height: 100%; min-height: 280px;
+  object-fit: cover; object-position: center 35%; cursor: zoom-in;
+  transition: transform .4s ease;
+}
+.apercu:hover img { transform: scale(1.04); }
+.apercu figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; pointer-events: none;
+  background: linear-gradient(transparent, rgba(16, 18, 21, .92));
+  display: flex; flex-direction: column; gap: 2px;
+}
+.apercu figcaption span { font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; color: var(--or); }
+.apercu figcaption strong { font-family: var(--font-titre); font-size: 1.05rem; letter-spacing: .05em; color: var(--argent); }
+.hide-img .apercu { display: none; }
+.hide-img .group.has-apercu .group-body { display: block; }
+
 /* ---------- Tableaux ---------- */
 table { width: 100%; border-collapse: collapse; }
 th, td { padding: 6px 10px; text-align: left; vertical-align: middle; border-bottom: 1px solid rgba(74, 79, 87, .6); }
@@ -349,6 +373,7 @@ td.mat { color: var(--muted); font-size: .88rem; }
 
 /* Tablette */
 @media (max-width: 900px) {
+  .group.has-apercu .group-body { grid-template-columns: 190px minmax(0, 1fr); }
   .hero { padding: 28px var(--gutter); grid-template-columns: 1fr 200px; }
   .hero-window { height: 220px; }
   .hero-anvil { display: none; }
@@ -386,6 +411,9 @@ td.mat { color: var(--muted); font-size: .88rem; }
   main { padding-bottom: 90px; }
   .group { margin: 10px 0; scroll-margin-top: 150px; }
   .group h2 { padding: 8px 10px; font-size: .95rem; }
+  .group.has-apercu .group-body { grid-template-columns: 1fr; }
+  .apercu { border-right: none; border-bottom: 1px solid var(--border); height: 230px; }
+  .apercu img { min-height: 0; object-position: center 12%; }
   .lic-grid { grid-template-columns: 1fr; padding: 10px; }
   .lic-panel thead { display: table-header-group; }
 
