@@ -40,7 +40,7 @@ const CATALOGUE = [
 
   { groupe: "Armes en fer", categorie: "Armes", items: [
     { nom: "Arc",               mo: 4,  prix: 21 },
-    { nom: "Flèches x80",       mo: 2,  prix: 15 },
+    { nom: "Flèches x80",       mo: 2,  prix: 16 },
     { nom: "Dague",             mo: 3,  prix: 19 },
     { nom: "Épée",              mo: 4,  prix: 25 },
     { nom: "Hache",             mo: 5,  prix: 26 },
@@ -52,7 +52,7 @@ const CATALOGUE = [
 
   { groupe: "Armes en acier", categorie: "Armes", items: [
     { nom: "Arc",               mo: 8,  prix: 40 },
-    { nom: "Flèches x80",       mo: 3,  prix: 19 },
+    { nom: "Flèches x80",       mo: 3,  prix: 20 },
     { nom: "Dague",             mo: 5,  prix: 28 },
     { nom: "Épée",              mo: 6,  prix: 37 },
     { nom: "Hache",             mo: 8,  prix: 39 },
@@ -101,19 +101,19 @@ const CATALOGUE = [
   /* ------------------------ ARMURES LOURDES ------------------------ */
 
   { groupe: "Armure en fer", categorie: "Armures lourdes", items: [
-    { nom: "Casque",    mat: "2 bandes de cuir, 3 lingots de fer",                     mo: 6,  prix: 32 },
-    { nom: "Armure",    mat: "3 bandes de cuir, 1 corindon raffiné, 5 lingots de fer", mo: 10, prix: 45 },
-    { nom: "Gantelets", mat: "2 bandes de cuir, 2 lingots de fer",                     mo: 6,  prix: 32 },
-    { nom: "Bottes",    mat: "2 bandes de cuir, 3 lingots de fer",                     mo: 8,  prix: 38 },
-    { nom: "Bouclier",  mat: "1 bande de cuir, 4 lingots de fer",                      mo: 7,  prix: 37 },
+    { nom: "Casque",    mat: "2 bandes de cuir, 3 lingots de fer",                     mo: 6,  prix: 37 },
+    { nom: "Armure",    mat: "3 bandes de cuir, 1 corindon raffiné, 5 lingots de fer", mo: 10, prix: 50 },
+    { nom: "Gantelets", mat: "2 bandes de cuir, 2 lingots de fer",                     mo: 6,  prix: 37 },
+    { nom: "Bottes",    mat: "2 bandes de cuir, 3 lingots de fer",                     mo: 8,  prix: 43 },
+    { nom: "Bouclier",  mat: "1 bande de cuir, 4 lingots de fer",                      mo: 7,  prix: 42 },
   ]},
 
   { groupe: "Armure en acier", categorie: "Armures lourdes", items: [
-    { nom: "Casque",    mat: "2 bandes de cuir, 2 lingots d'acier, 1 lingot de fer", mo: 10, prix: 39 },
-    { nom: "Armure",    mat: "3 bandes de cuir, 4 lingots d'acier, 1 lingot de fer", mo: 15, prix: 59 },
-    { nom: "Gantelets", mat: "2 bandes de cuir, 2 lingots d'acier, 1 lingot de fer", mo: 10, prix: 39 },
-    { nom: "Bottes",    mat: "2 bandes de cuir, 3 lingots d'acier, 1 lingot de fer", mo: 12, prix: 48 },
-    { nom: "Bouclier",  mat: "1 bande de cuir, 3 lingots d'acier, 1 lingot de fer",  mo: 12, prix: 47 },
+    { nom: "Casque",    mat: "2 bandes de cuir, 2 lingots d'acier, 1 lingot de fer", mo: 10, prix: 44 },
+    { nom: "Armure",    mat: "3 bandes de cuir, 4 lingots d'acier, 1 lingot de fer", mo: 15, prix: 64 },
+    { nom: "Gantelets", mat: "2 bandes de cuir, 2 lingots d'acier, 1 lingot de fer", mo: 10, prix: 44 },
+    { nom: "Bottes",    mat: "2 bandes de cuir, 3 lingots d'acier, 1 lingot de fer", mo: 12, prix: 53 },
+    { nom: "Bouclier",  mat: "1 bande de cuir, 3 lingots d'acier, 1 lingot de fer",  mo: 12, prix: 52 },
   ]},
 
   /* Dwemer : 3 variantes visuelles, mêmes matériaux et mêmes prix.
