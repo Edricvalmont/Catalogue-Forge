@@ -72,6 +72,32 @@ const CATALOGUE = [
     { nom: "Masse",        mo: 9, prix: 43 },
   ]},
 
+  { groupe: "Armes en verre", categorie: "Armes", licence: "verre",
+    note: "Recette et prix à compléter.", items: [
+    { nom: "Arc",               mo: null, prix: null },
+    { nom: "Flèches x80",       mo: null, prix: null },
+    { nom: "Dague",             mo: null, prix: null },
+    { nom: "Épée",              mo: null, prix: null },
+    { nom: "Hache",             mo: null, prix: null },
+    { nom: "Masse",             mo: null, prix: null },
+    { nom: "Espadon",           mo: null, prix: null },
+    { nom: "Hache d'arme",      mo: null, prix: null },
+    { nom: "Marteau de guerre", mo: null, prix: null },
+  ]},
+
+  { groupe: "Armes en ébonite", categorie: "Armes", licence: "ebonite",
+    note: "Recette et prix à compléter.", items: [
+    { nom: "Arc",               mo: null, prix: null },
+    { nom: "Flèches x80",       mo: null, prix: null },
+    { nom: "Dague",             mo: null, prix: null },
+    { nom: "Épée",              mo: null, prix: null },
+    { nom: "Hache",             mo: null, prix: null },
+    { nom: "Masse",             mo: null, prix: null },
+    { nom: "Espadon",           mo: null, prix: null },
+    { nom: "Hache d'arme",      mo: null, prix: null },
+    { nom: "Marteau de guerre", mo: null, prix: null },
+  ]},
+
   /* ------------------------ ARMURES LOURDES ------------------------ */
 
   { groupe: "Armure en fer", categorie: "Armures lourdes", items: [
@@ -141,6 +167,15 @@ const CATALOGUE = [
     { nom: "Gantelets",             mo: null, prix: null },
     { nom: "Bottes",                mo: null, prix: null },
     { nom: "Casque",                mo: null, prix: null },
+  ]},
+
+  { groupe: "Armure d'ébonite", categorie: "Armures lourdes", licence: "ebonite",
+    note: "Recette et prix à compléter.", items: [
+    { nom: "Casque",            mo: null, prix: null },
+    { nom: "Armure",            mo: null, prix: null },
+    { nom: "Gantelets",         mo: null, prix: null },
+    { nom: "Bottes",            mo: null, prix: null },
+    { nom: "Bouclier",          mo: null, prix: null },
   ]},
 
   /* ------------------------ ARMURES LÉGÈRES ------------------------ */
@@ -251,6 +286,15 @@ const CATALOGUE = [
     { nom: "Gantelets",             mo: null, prix: null },
     { nom: "Bottes",                mo: null, prix: null },
     { nom: "Casque",                mo: null, prix: null },
+  ]},
+
+  { groupe: "Armure de verre", categorie: "Armures légères", licence: "verre",
+    note: "Recette et prix à compléter.", items: [
+    { nom: "Casque",            mo: null, prix: null },
+    { nom: "Armure",            mo: null, prix: null },
+    { nom: "Gantelets",         mo: null, prix: null },
+    { nom: "Bottes",            mo: null, prix: null },
+    { nom: "Bouclier",          mo: null, prix: null },
   ]},
 
   /* ----------------------------- OUTILS ---------------------------- */
